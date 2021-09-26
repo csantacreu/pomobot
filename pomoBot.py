@@ -1,9 +1,21 @@
 
-from datetime import date, datetime
+from datetime import datetime
+import time
 
-# Get the current time
+def countdown(inp_mnts):
+    rem_tm = (60 * inp_mnts)
+    while rem_tm:
+        time.sleep(1)
+        rem_tm -= 1
+        print(rem_tm)
 
-print(datetime.now())
+# Input work time, rest time (and cycles)
+
+# Start work countdown
+
+countdown(0.5)
+
+# print(datetime.now())
 
 # Add 25 to it
 
